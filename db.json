@@ -4533,7 +4533,7 @@
           "input1": "arr = ['abcw', 'foo', 'bar', 'xytf', 'abcdef']",
           "output1": "16",
 
-          "input2": "arr = ['az', 'bc', 'aca', 'abaa']",
+          "input2": "arr = ['ab', 'bc', 'aca', 'abaa']",
           "output2": "0",
 
           "answer": ""
@@ -5334,7 +5334,7 @@
     {
       "id": 8,
       "title": "Django",
-      "logo": "htmll.png",
+      "logo": "django.png",
       "description": "Django is a powerful Python web framework known for its rapid development capabilities and comprehensive features. It emphasizes code reusability and scalability, making it popular among developers.",
       "lastUpdated": "15th June 2023",
       "body": [
@@ -5443,7 +5443,7 @@
     {
       "id": 9,
       "title": "MongoDB",
-      "logo": "mongo.png",
+      "logo": "mongodb.png",
       "description": "MongoDB is a scalable NoSQL database known for its flexibility and document-oriented approach. It's widely used in modern web applications for its performance and ease of use.",
       "lastUpdated": "15th June 2023",
       "body": [

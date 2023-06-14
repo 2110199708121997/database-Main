@@ -4512,6 +4512,57 @@
           "output2": "1994",
 
           "answer": "function romanToInteger(n) {\n  const romanSymbols = {\n    I: 1,\n    V: 5,\n    X: 10,\n    L: 50,\n    C: 100,\n    D: 500,\n    M: 1000,\n    IV: 4,\n    IX: 9,\n    XL: 40,\n    XC: 90,\n    CD: 400,\n    CM: 900,\n  };\n\n  let result = 0;\n\n  n.replace(/IV|IX|XL|XC|CD|CM|I|V|X|L|C|D|M/g,\n    (match) => { result += romanSymbols[match];\n    }\n  );\n\n  return console.log(result);\n}\n\nromanToInteger('III'); // 3\nromanToInteger('IX'); // 9\nromanToInteger('LVIII'); // 58\nromanToInteger('MCMXCIV'); // 1994"
+        },
+        {
+          "id": 12,
+          "name": "LONGEST COMMON PREFIX",
+          "question": "Given an array of strings, find the Longest Common Prefix amongst the strings.",
+
+          "input1": "arr = ['padhakoo', 'padhAI', 'paradox']",
+          "output1": "pa",
+
+          "input2": "arr = ['java', 'javascript', 'javelin']",
+          "output2": "jav",
+          "answer": "function longestCommonPrefix(arr) {\n  // Return nothing if arr is empty\n  if (arr.length == 0) return '';\n\n  // Loop through the letters of the first string\n  for (let i = 0; i <= arr[0].length; i++) {\n    \n    // Loop through the other strings starting from 2nd string\n    for (let j = 1; j < arr.length; j++) {\n        \n      // Check if this character is also present in the same position of each string\n      if (arr[0][i] !== arr[j][i]) {\n        \n        // If not, return the string up to and including the previous character\n        return arr[0].slice(0, i);\n      }\n    }\n  }\n\n  return arr[0];\n}\n\nconsole.log(longestCommonPrefix(['padhakoo', 'padhAI', 'paradox']));\nconsole.log(longestCommonPrefix(['java', 'javascript', 'javelin']));"
+        },
+        {
+          "id": 13,
+          "name": "MAX PRODUCT",
+          "question": "Given an array of strings. Return the maximum value of 'length(word[i]) * length(word[j])' where the two words do not share common letters. If no such two words exist, return '0'.",
+
+          "input1": "",
+          "output1": "",
+
+          "input2": "",
+          "output2": "",
+
+          "answer": ""
+        },
+        {
+          "id": 14,
+          "name": "",
+          "question": "",
+
+          "input1": "",
+          "output1": "",
+
+          "input2": "",
+          "output2": "",
+
+          "answer": ""
+        },
+        {
+          "id": 15,
+          "name": "",
+          "question": "",
+
+          "input1": "",
+          "output1": "",
+
+          "input2": "",
+          "output2": "",
+
+          "answer": ""
         }
       ]
     }
@@ -5283,7 +5334,7 @@
     {
       "id": 8,
       "title": "Django",
-      "logo": "jango.png",
+      "logo": "django.jpg",
       "description": "Django is a powerful Python web framework known for its rapid development capabilities and comprehensive features. It emphasizes code reusability and scalability, making it popular among developers.",
       "lastUpdated": "15th June 2023",
       "body": [

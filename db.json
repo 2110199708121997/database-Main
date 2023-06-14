@@ -3,7 +3,8 @@
     {
       "id": 1,
       "title": "JavaScript",
-      "logo": "javascript.png",
+      "logo": "django.png",
+
       "description": "JavaScript is a versatile language for building interactive web applications. It runs in the browser and enables real-time updates and user interactivity.",
       "lastUpdated": "3rd June 2023",
       "body": [
@@ -312,7 +313,8 @@
     {
       "id": 2,
       "title": "React JS",
-      "logo": "react.png",
+      "logo": "mongodb.png",
+
       "description": "React is a JavaScript library for building user interfaces. It's widely used in web development, particularly for creating reusable components and optimizing rendering performance. Companies like Facebook, Instagram, Airbnb, and Netflix rely on React for their applications.",
       "lastUpdated": "1st June 2023",
       "body": [

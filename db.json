@@ -3,8 +3,7 @@
     {
       "id": 1,
       "title": "JavaScript",
-      "logo": "django.png",
-
+      "logo": "javascript.png",
       "description": "JavaScript is a versatile language for building interactive web applications. It runs in the browser and enables real-time updates and user interactivity.",
       "lastUpdated": "3rd June 2023",
       "body": [
@@ -313,8 +312,7 @@
     {
       "id": 2,
       "title": "React JS",
-      "logo": "mongodb.png",
-
+      "logo": "react.png",
       "description": "React is a JavaScript library for building user interfaces. It's widely used in web development, particularly for creating reusable components and optimizing rendering performance. Companies like Facebook, Instagram, Airbnb, and Netflix rely on React for their applications.",
       "lastUpdated": "1st June 2023",
       "body": [
@@ -4397,6 +4395,30 @@
           "answer": "function longStr(arr) {\n  let result = '';\n  for (i = 0; i < arr.length; i++) {\n    if (arr[i].length > result.length) {\n      result = arr[i];\n    }\n  }\n  return console.log(result);\n}\n\nlongStr(['bit', 'coin']); // coin\nlongStr(['jon', 'snow']); // snow"
         },
         {
+          "id": 3,
+          "name": "POWER OF 2",
+          "question": "Write a function that takes a natural number 'n' as an arguement. Determine if the number is a power of 2 or not. Return true/false accordingly.",
+
+          "input1": "n = 16",
+          "output1": "true",
+
+          "input2": "n = 10",
+          "output2": "false",
+          "answer": "function powerOf2(n) {\n  if (n % 2 == 0) {\n    for (i = 1; i <= n; i++) {\n      if (n == 2 ** i) {\n        return true;\n      }\n    }\n    return false;\n  } else return false;\n}\n\nconsole.log(powerOf2(16)); // true\nconsole.log(powerOf2(10)); // false"
+        },
+        {
+          "id": 4,
+          "name": "LENGTH OF LAST WORD",
+          "question": "Given a string 's' consisting of words and spaces, return the length of the last word in the string. A word is a maximal substring consisting of non-space characters only.",
+
+          "input1": "s = 'Hey JavaScript  '",
+          "output1": "10",
+
+          "input2": "s = 'Ask padhAI' ",
+          "output2": "6",
+          "answer": "function lengthOfLast(s) {\n\n  // Remove leading & trailing spaces\n  let trimStr = s.trim();\n\n  // Split string into an array\n  let arr = trimStr.split(' ');\n  // Get the last word\n  let result = arr[arr.length - 1];\n\n  return console.log(result.length);\n}\n\nlengthOfLast('Hey JavaScript  '); // 10\nlengthOfLast('Ask padhAI'); // 6"
+        },
+        {
           "id": 5,
           "name": "STACK REVERSE",
           "question": "Write a function to reverse a string using stack. The function will take a string as an arguement and returns the reversed string.\nDo not use any in-built methods like .reverse(), .split(), .join()",
@@ -4452,6 +4474,19 @@
           "answer": "function consonant(str) {\n  let count = 0;\n  str = str.toLowerCase();\n  for (i = 0; i < str.length; i++) {\n    if (str[i] == 'a') {\n      count++;\n    }\n    if (str[i] == 'e') {\n      count++;\n    }\n    if (str[i] == 'i') {\n      count++;\n    }\n    if (str[i] == 'o') {\n      count++;\n    }\n    if (str[i] == 'u') {\n      count++;\n    }\n  }\n  let result = str.length - count;\n  return console.log(result);\n}\n\nconsonant('padhakoo'); // 4\nconsonant('padhAI'); // 3"
         },
         {
+          "id": 9,
+          "name": "TWO SUM",
+          "question": "Write a function that takes an array and an integer as parameters. Find a pair from the array elements such that their sum equals to the given integer. Return the indices of those array elements.",
+
+          "input1": "arr = [2, 7, 11, 15] \u200B \u200B n = 9",
+          "output1": "[ 0, 1 ]",
+
+          "input2": "arr = [25, 19, 8, 31] \u200B \u200B n = 27",
+          "output2": "[ 1, 2 ]",
+
+          "answer": "function twoSum(arr, n) {\n  let result = [];\n\n  for (i = 0; i < arr.length; i++) {\n    for (j = i + 1; j < arr.length; j++) {\n      if (arr[i] + arr[j] == n) {\n        result.push(i, j);\n      }\n    }\n  }\n  return console.log(result);\n};\n\ntwoSum([2, 7, 11, 15], 9); // [ 0, 1 ]\ntwoSum([25, 19, 8, 31], 27); //  [1, 2 ]"
+        },
+        {
           "id": 10,
           "name": "INSERT STRING",
           "question": "Write a function that takes 2 strings: 'str1' and 'str2' as arguements. Starting from the end of str1, insert str2 in str1 after every 3rd character of str1. Return the resultant string.",
@@ -4464,6 +4499,19 @@
 
           "detailedQuestion": "",
           "answer": "function insertStr(str1, str2) \n  let arr = [...str1];\n  arr.reverse();\n\n  let newArr = [];\n  newArr.push(arr[0]);\n\n  for (i = 1; i < arr.length; i++) \n    if (i % 3 != 0) \n      newArr.push(arr[i]);\n    else \n      newArr.push(str2);\n      newArr.push(arr[i]);\n  return newArr.reverse().join('');\n\nconsole.log(insertStr('1234567', '.'));\nconsole.log(insertStr('avengers', '*'));"
+        },
+        {
+          "id": 11,
+          "name": "ROMAN TO INTEGER",
+          "question": "Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.\n\nSymbol       Value\nI             1\nV             5\nX             10\nL             50\nC             100\nD             500\nM             1000\n\nFor example, 2 is written as II in Roman numeral, just two ones added together. 12 is written as XII, which is simply X + II. The number 27 is written as XXVII, which is XX + V + II.\n\nRoman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:\n\nI can be placed before V (5) and X (10) to make 4 and 9. \nX can be placed before L (50) and C (100) to make 40 and 90. \nC can be placed before D (500) and M (1000) to make 400 and 900.\nGiven a roman numeral, convert it to an integer.",
+
+          "input1": "n = IX",
+          "output1": "9",
+
+          "input2": "n = MCMXCIV",
+          "output2": "1994",
+
+          "answer": "function romanToInteger(n) {\n  const romanSymbols = {\n    I: 1,\n    V: 5,\n    X: 10,\n    L: 50,\n    C: 100,\n    D: 500,\n    M: 1000,\n    IV: 4,\n    IX: 9,\n    XL: 40,\n    XC: 90,\n    CD: 400,\n    CM: 900,\n  };\n\n  let result = 0;\n\n  n.replace(/IV|IX|XL|XC|CD|CM|I|V|X|L|C|D|M/g,\n    (match) => { result += romanSymbols[match];\n    }\n  );\n\n  return console.log(result);\n}\n\nromanToInteger('III'); // 3\nromanToInteger('IX'); // 9\nromanToInteger('LVIII'); // 58\nromanToInteger('MCMXCIV'); // 1994"
         }
       ]
     }

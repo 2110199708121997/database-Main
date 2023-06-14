@@ -4364,7 +4364,54 @@
             "id": 1,
             "title": "Easy",
             "logo": "easy.png",
-            "lastUpdated": "14th June 2023",
+            "lastUpdated": "15th June 2023",
+            "body": [
+                {
+                    "id": 1,
+                    "name": "nth ELEMENT",
+                    "question": "Write a function that takes an array and a natural number 'n' as arguements. Make a new array consisting of every nth element of the input array.",
+
+                    "input1": "arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",
+                    "output1": "[ 2, 4, 6, 8, 10 ]",
+
+                    "input2": "arr = [4, 7, 9, 2, 5, 11, 6]",
+                    "output2": "[ 9, 11 ]",
+
+                    "answer": "function everyNthElemement(arr, n) {\n    let newArr = [];\n    let count = 0;\n\n    for (i = 0; i < arr.length; i++) {\n        count++;\n        if (count == n) {\n            newArr.push(arr[i]);\n            count = 0;\n        }\n    }\n\n    console.log(newArr);\n}\n\neveryNthElemement([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 2); // [ 2, 4, 6, 8, 10 ]\neveryNthElemement([4, 7, 9, 2, 5, 11, 6], 3); // [ 9, 11 ]"
+                },
+                {
+                    "id": 2,
+                    "name": "",
+                    "question": "",
+
+                    "input1": "",
+                    "output1": "",
+
+                    "input2": "",
+                    "output2": "",
+
+                    "answer": ""
+                },
+                {
+                    "id": 3,
+                    "name": "",
+                    "question": "",
+
+                    "input1": "",
+                    "output1": "",
+
+                    "input2": "",
+                    "output2": "",
+
+                    "answer": ""
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Medium",
+            "logo": "medium.png",
+            "lastUpdated": "19th June 2023",
 
             "body": [
                 {
@@ -4565,6 +4612,18 @@
                 },
                 {
                     "id": 16,
+                    "name": "VALID PARENTHESES",
+                    "question": "You are given a string consisting of parentheses, square brackets, and curly braces. Your task is to determine if the string is balanced. A string is considered balanced if every opening bracket has a corresponding closing bracket of the same type, and they are properly nested. Write a function that takes a string consisting of parentheses, square brackets, and curly braces. Return true or false based on whether the string is balanced or not.",
+
+                    "input1": "s = '([])'",
+                    "output1": "true",
+
+                    "input2": "s = '{[()]}('",
+                    "output2": "false",
+                    "answer": "function validParentheses(s) {\n    const stack = [];\n\n    for (let i = 0; i < s.length; i++) {\n        const char = s[i];\n        if (char === '(' || char === '[' || char === '{') {\n            stack.push(char);\n        } else if (char === ')' || char === ']' || char === '}') {\n            if (stack.length === 0) {\n                return false;\n            }\n\n            const top = stack.pop();\n            if (\n                (char === ')' && top !== '(') ||\n                (char === ']' && top !== '[') ||\n                (char === '}' && top !== '{')\n            ) {\n                return false;\n            }\n        }\n    }\n\n    return stack.length === 0;\n}\n\nconsole.log(validParentheses('()')); // true\nconsole.log(validParentheses('([])')); // true\nconsole.log(validParentheses('{[()]}')); // true\nconsole.log(validParentheses('([)]')); // false\nconsole.log(validParentheses('{[()]}(')); // false\nconsole.log(validParentheses('(([{[]}]))')); // true\nconsole.log(validParentheses('')); // true\nconsole.log(validParentheses('[(])')); // false"
+                },
+                {
+                    "id": 16,
                     "name": "",
                     "question": "",
 
@@ -4591,53 +4650,6 @@
                 },
                 {
                     "id": 18,
-                    "name": "",
-                    "question": "",
-
-                    "input1": "",
-                    "output1": "",
-
-                    "input2": "",
-                    "output2": "",
-
-                    "answer": ""
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "title": "Medium",
-            "logo": "medium.png",
-            "lastUpdated": "18th June 2023",
-
-            "body": [
-                {
-                    "id": 1,
-                    "name": "VALID PARENTHESES",
-                    "question": "You are given a string consisting of parentheses, square brackets, and curly braces. Your task is to determine if the string is balanced. A string is considered balanced if every opening bracket has a corresponding closing bracket of the same type, and they are properly nested. Write a function that takes a string consisting of parentheses, square brackets, and curly braces. Return true or false based on whether the string is balanced or not.",
-
-                    "input1": "s = '([])'",
-                    "output1": "true",
-
-                    "input2": "s = '{[()]}('",
-                    "output2": "false",
-                    "answer": "function validParentheses(s) {\n    const stack = [];\n\n    for (let i = 0; i < s.length; i++) {\n        const char = s[i];\n        if (char === '(' || char === '[' || char === '{') {\n            stack.push(char);\n        } else if (char === ')' || char === ']' || char === '}') {\n            if (stack.length === 0) {\n                return false;\n            }\n\n            const top = stack.pop();\n            if (\n                (char === ')' && top !== '(') ||\n                (char === ']' && top !== '[') ||\n                (char === '}' && top !== '{')\n            ) {\n                return false;\n            }\n        }\n    }\n\n    return stack.length === 0;\n}\n\nconsole.log(validParentheses('()')); // true\nconsole.log(validParentheses('([])')); // true\nconsole.log(validParentheses('{[()]}')); // true\nconsole.log(validParentheses('([)]')); // false\nconsole.log(validParentheses('{[()]}(')); // false\nconsole.log(validParentheses('(([{[]}]))')); // true\nconsole.log(validParentheses('')); // true\nconsole.log(validParentheses('[(])')); // false"
-                },
-                {
-                    "id": 2,
-                    "name": "",
-                    "question": "",
-
-                    "input1": "",
-                    "output1": "",
-
-                    "input2": "",
-                    "output2": "",
-
-                    "answer": ""
-                },
-                {
-                    "id": 3,
                     "name": "",
                     "question": "",
 

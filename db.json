@@ -4443,27 +4443,26 @@
                 },
                 {
                     "id": 7,
-                    "name": "",
-                    "question": "",
+                    "name": "SUM OF EVEN",
+                    "question": "Write a function to find the sum of all even numbers in an array.",
 
-                    "input1": "",
-                    "output1": "",
+                    "input1": "arr = [21, 13, 50, 7, 19, 11]",
+                    "output1": "50",
 
-                    "input2": "",
-                    "output2": "",
-
-                    "answer": ""
+                    "input2": "arr = [2, 5, 8, 11, 14]",
+                    "output2": "24",
+                    "answer": "function sumOfEven(arr) {\n    let sum = 0;\n\n    for (let i = 0; i < arr.length; i++) {\n        if (arr[i] % 2 === 0) {\n            sum += arr[i];\n        }\n    }\n\n    return console.log(sum);\n}\n\nsumOfEven([21, 13, 50, 7, 19, 11]); // 50\nsumOfEven([2, 5, 8, 11, 14]); // 24"
                 },
                 {
                     "id": 8,
-                    "name": "",
-                    "question": "",
+                    "name": "SWAP KEYS & VALUES",
+                    "question": "Write a function to swap the keys and values of an object.",
 
-                    "input1": "",
-                    "output1": "",
+                    "input1": "obj = { x: 'a', y: 'b', z: 'c' }",
+                    "output1": "{ a: 'x', b: 'y', c: 'z' }",
 
-                    "input2": "",
-                    "output2": "",
+                    "input2": "obj = { 1: '', '': 'three', 4: null }",
+                    "output2": "{ '': '1', null: '4', three: '' }",
 
                     "answer": ""
                 },

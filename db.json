@@ -4363,7 +4363,7 @@
         {
             "id": 1,
             "title": "Easy",
-            "logo": "easy.png",
+            "logo": "easy.webp",
             "lastUpdated": "15th June 2023",
             "body": [
                 {
@@ -4497,9 +4497,8 @@
         {
             "id": 2,
             "title": "Medium",
-            "logo": "medium.png",
+            "logo": "medium.webp",
             "lastUpdated": "19th June 2023",
-
             "body": [
                 {
                     "id": 1,

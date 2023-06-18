@@ -4349,14 +4349,6 @@
                     "reason": "In Java, a variable is a named memory location used to store data. It is used to hold values that can be accessed and manipulated in a program. Variables are declared with a specific data type and can be assigned different values during the execution of the program."
                 }
             ]
-        },
-        {
-            "id": 15,
-            "title": "Angular - I",
-            "logo": "angular.png",
-            "description": "Angular is a powerful web application framework for building dynamic and scalable single-page applications. It offers robust features and enjoys wide adoption among developers.",
-            "lastUpdated": "7th June 2023",
-            "body": []
         }
     ],
     "dsa": [

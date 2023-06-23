@@ -4455,34 +4455,7 @@
 
                     "input2": "obj = { 1: '', '': 'three', 4: null }",
                     "output2": "{ '': '1', null: '4', three: '' }",
-
-                    "answer": ""
-                },
-                {
-                    "id": 9,
-                    "name": "",
-                    "question": "",
-
-                    "input1": "",
-                    "output1": "",
-
-                    "input2": "",
-                    "output2": "",
-
-                    "answer": ""
-                },
-                {
-                    "id": 10,
-                    "name": "",
-                    "question": "",
-
-                    "input1": "",
-                    "output1": "",
-
-                    "input2": "",
-                    "output2": "",
-
-                    "answer": ""
+                    "answer": "function swap(obj) {\n\n    // Returns an 'array of keys' of the object specified\n    let arrKeys = Object.keys(obj);\n    // Returns an 'array of values' of the object specified\n    let arrValues = Object.values(obj);\n\n    const resultObj = {};\n    \n    for (i = 0; i < arrKeys.length; i++) {\n        // object[key] = value is a syntax to add key-value pairs to an object\n        resultObj[arrValues[i]] = arrKeys[i];\n    }\n\n    return console.log(resultObj);\n}\n\nswap({ x: 'a', y: 'b', z: 'c' }); // { a: 'x', b: 'y', c: 'z' }\nswap({ 1: '', '': 'three', 4: null }); // { '': '1', null: '4', three: '' }"
                 }
             ]
         },
@@ -4585,7 +4558,6 @@
 
                     "detailedQuestion": "",
                     "answer": "function theLcm(n1, n2) {\n    \n    for (i = 1; i <= n2; i++) {\n        let result = n1 * i;\n        if (result % n2 == 0) {\n            return result;\n        }\n    }\n}\n\nconsole.log(theLcm(3, 4)); // 12\nconsole.log(theLcm(17, 8)); // 136;"
-
                 },
                 {
                     "id": 8,
@@ -4674,7 +4646,7 @@
 
                     "input2": "s = 'padhakoo'",
                     "output2": "podhokaa",
-                    "answer": "function reverseVowels(str) {\n\n    const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];\n    const chars = str.split('');\n    let start = 0;\n    let end = chars.length - 1;\n  \n    while (start < end) {\n      if (vowels.includes(chars[start]) && vowels.includes(chars[end])) {\n        [chars[start], chars[end]] = [chars[end], chars[start]];\n        start++;\n        end--;\n      }\n      \n      else if (vowels.includes(chars[start])) {\n        end--;\n      }\n      \n      else {\n        start++;\n      }\n    }\n  \n    return chars.join('');\n  }\n  \n  console.log(reverseVowels('padhAI')); // pIdhAa\n  console.log(reverseVowels('padhakoo')); // podhokaa\n  console.log(reverseVowels('OpenAI')); // IpAneO"
+                    "answer": "function reverseVowels(s) {\n\n    const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];\n    const chars = s.split('');\n    let start = 0;\n    let end = chars.length - 1;\n  \n    while (start < end) {\n      if (vowels.includes(chars[start]) && vowels.includes(chars[end])) {\n        [chars[start], chars[end]] = [chars[end], chars[start]];\n        start++;\n        end--;\n      }\n      \n      else if (vowels.includes(chars[start])) {\n        end--;\n      }\n      \n      else {\n        start++;\n      }\n    }\n  \n    return chars.join('');\n  }\n  \n  console.log(reverseVowels('padhAI')); // pIdhAa\n  console.log(reverseVowels('padhakoo')); // podhokaa\n  console.log(reverseVowels('OpenAI')); // IpAneO"
                 },
                 {
                     "id": 15,
@@ -4686,7 +4658,7 @@
 
                     "input2": "s = 'Was it a car or a cat I saw'",
                     "output2": "true",
-                    "answer": "function isPalindrome(s) {\n  // Convert the string to lowercase and remove non-alphanumeric characters\n  const alphanumericString = s.toLowerCase().replace(/[^a-z0-9]/g, '');\n\n  // Check if the alphanumericString is a palindrome\n  for (let i = 0; i < alphanumericString.length / 2; i++) {\n    if (\n      alphanumericString[i] !==\n      alphanumericString[alphanumericString.length - 1 - i]\n    ) {\n      return false;\n    }\n  }\n\n  return true;\n}\n\nconsole.log(isPalindrome('A man, a plan, a canal: Panama')); // true\nconsole.log(isPalindrome('Was it a car or a cat I saw')); // true\nconsole.log(isPalindrome('padhAI works on GPT 3.5')); // false"
+                    "answer": "function isPalindrome(s) {\n    \n    // Convert the string to lowercase and remove non-alphanumeric characters\n    const str = s.toLowerCase().replace(/[^a-z0-9]/g, '');\n  \n    // Check if the string is a palindrome\n    for (let i = 0; i < str.length / 2; i++) {\n      if (str[i] !== str[str.length - 1 - i]) {\n        return false;\n      }\n    }\n  \n    return true;\n  }\n  \n  console.log(isPalindrome('A man, a plan, a canal: Panama')); // true\n  console.log(isPalindrome('Was it a car or a cat I saw')); // true\n  console.log(isPalindrome('padhAI works on GPT 3.5')); // false"
                 },
                 {
                     "id": 16,
@@ -4699,45 +4671,6 @@
                     "input2": "s = '{[()]}('",
                     "output2": "false",
                     "answer": "function validParentheses(s) {\n    const stack = [];\n\n    for (let i = 0; i < s.length; i++) {\n        const char = s[i];\n        if (char === '(' || char === '[' || char === '{') {\n            stack.push(char);\n        } else if (char === ')' || char === ']' || char === '}') {\n            if (stack.length === 0) {\n                return false;\n            }\n\n            const top = stack.pop();\n            if (\n                (char === ')' && top !== '(') ||\n                (char === ']' && top !== '[') ||\n                (char === '}' && top !== '{')\n            ) {\n                return false;\n            }\n        }\n    }\n\n    return stack.length === 0;\n}\n\nconsole.log(validParentheses('()')); // true\nconsole.log(validParentheses('([])')); // true\nconsole.log(validParentheses('{[()]}')); // true\nconsole.log(validParentheses('([)]')); // false\nconsole.log(validParentheses('{[()]}(')); // false\nconsole.log(validParentheses('(([{[]}]))')); // true\nconsole.log(validParentheses('')); // true\nconsole.log(validParentheses('[(])')); // false"
-                },
-                {
-                    "id": 16,
-                    "name": "",
-                    "question": "",
-
-                    "input1": "",
-                    "output1": "",
-
-                    "input2": "",
-                    "output2": "",
-
-                    "answer": ""
-                },
-                {
-                    "id": 17,
-                    "name": "",
-                    "question": "",
-
-                    "input1": "",
-                    "output1": "",
-
-                    "input2": "",
-                    "output2": "",
-
-                    "answer": ""
-                },
-                {
-                    "id": 18,
-                    "name": "",
-                    "question": "",
-
-                    "input1": "",
-                    "output1": "",
-
-                    "input2": "",
-                    "output2": "",
-
-                    "answer": ""
                 }
             ]
         }

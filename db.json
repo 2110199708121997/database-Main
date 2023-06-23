@@ -4625,7 +4625,7 @@
                     "output2": "av*eng*ers",
 
                     "detailedQuestion": "",
-                    "answer": "function insertStr(str1, str2) \n  let arr = [...str1];\n  arr.reverse();\n\n  let newArr = [];\n  newArr.push(arr[0]);\n\n  for (i = 1; i < arr.length; i++) \n    if (i % 3 != 0) \n      newArr.push(arr[i]);\n    else \n      newArr.push(str2);\n      newArr.push(arr[i]);\n  return newArr.reverse().join('');\n\nconsole.log(insertStr('1234567', '.'));\nconsole.log(insertStr('avengers', '*'));"
+                    "answer": "function insertString(str1, str2) {\n    \n    // converting a string into array using destructuring\n    let arr = [...str1];\n    arr.reverse();\n\n    let newArr = [];\n    newArr.push(arr[0]);\n\n    for (i = 1; i < arr.length; i++) {\n        if (i % 3 != 0) {\n            newArr.push(arr[i]);\n        }\n        else {\n            newArr.push(str2);\n            newArr.push(arr[i]);\n        }\n    }\n\n    return newArr.reverse().join('');\n}\n\nconsole.log(insertString('1234567', '.')); // 1.234.567\nconsole.log(insertString('avengers', '*')); // av*eng*ers"
                 },
                 {
                     "id": 11,
@@ -4650,7 +4650,7 @@
 
                     "input2": "arr = ['java', 'javascript', 'javelin']",
                     "output2": "jav",
-                    "answer": "function longestCommonPrefix(arr) {\n  // Return nothing if arr is empty\n  if (arr.length == 0) return '';\n\n  // Loop through the letters of the first string\n  for (let i = 0; i <= arr[0].length; i++) {\n    \n    // Loop through the other strings starting from 2nd string\n    for (let j = 1; j < arr.length; j++) {\n        \n      // Check if this character is also present in the same position of each string\n      if (arr[0][i] !== arr[j][i]) {\n        \n        // If not, return the string up to and including the previous character\n        return arr[0].slice(0, i);\n      }\n    }\n  }\n\n  return arr[0];\n}\n\nconsole.log(longestCommonPrefix(['padhakoo', 'padhAI', 'paradox']));\nconsole.log(longestCommonPrefix(['java', 'javascript', 'javelin']));"
+                    "answer": "function longestCommonPrefix(arr) {\n    \n    // Return nothing if arr is empty\n    if (arr.length == 0) {\n        return '';\n    }\n\n    for (let i = 0; i <= arr[0].length; i++) {\n        for (let j = 1; j < arr.length; j++) {\n            // Check if this character is also present in the same position of each string\n            if (arr[0][i] !== arr[j][i]) {\n                // If not, return the string up to and including the previous character\n                return arr[0].slice(0, i);\n            }\n        }\n    }\n\n    return arr[0];\n}\n\nconsole.log(longestCommonPrefix(['padhakoo', 'padhAI', 'paradox'])); // pa\nconsole.log(longestCommonPrefix(['java', 'javascript', 'javelin'])); // jav"
                 },
                 {
                     "id": 13,
@@ -4662,8 +4662,7 @@
 
                     "input2": "arr = ['ab', 'bc', 'aca', 'abaa']",
                     "output2": "0",
-
-                    "answer": "function maxProduct(arr) {\n  let result = 0;\n\n  for (let i = 0; i < arr.length - 1; i++) {\n    for (let j = i + 1; j < arr.length; j++) {\n      if (!hasCommonLetters(arr[i], arr[j])) {\n        const product = arr[i].length * arr[j].length;\n        result = Math.max(result, product);\n      }\n    }\n  }\n\n  return console.log(result);\n}\n\nfunction hasCommonLetters(word1, word2) {\n  const set1 = new Set(word1);\n\n  for (let char of word2) {\n    if (set1.has(char)) {\n      return true;\n    }\n  }\n  return false;\n}\n\nmaxProduct(['abcw', 'foo', 'bar', 'xytf', 'abcdef']); // 16\nmaxProduct(['ab', 'bc', 'aca', 'abaa']); // 0"
+                    "answer": "function maxProduct(arr) {\n    \n    let result = 0;\n\n    for (let i = 0; i < arr.length - 1; i++) {\n        for (let j = i + 1; j < arr.length; j++) {\n            if (!hasCommonLetters(arr[i], arr[j])) {\n                const product = arr[i].length * arr[j].length;\n                result = Math.max(result, product);\n            }\n        }\n    }\n\n    return console.log(result);\n}\n\nfunction hasCommonLetters(word1, word2) {\n\n    const set1 = new Set(word1);\n\n    for (let char of word2) {\n        if (set1.has(char)) {\n            return true;\n        }\n    }\n    \n    return false;\n}\n\nmaxProduct(['abcw', 'foo', 'bar', 'xytf', 'abcdef']); // 16\nmaxProduct(['ab', 'bc', 'aca', 'abaa']); // 0"
                 },
                 {
                     "id": 14,
@@ -4675,7 +4674,7 @@
 
                     "input2": "s = 'padhakoo'",
                     "output2": "podhokaa",
-                    "answer": "function reverseVowels(s) {\n  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];\n  const chars = s.split('');\n  let start = 0;\n  let end = chars.length - 1;\n\n  while (start < end) {\n    if (vowels.includes(chars[start]) && vowels.includes(chars[end])) {\n      [chars[start], chars[end]] = [chars[end], chars[start]];\n      start++;\n      end--;\n    } else if (vowels.includes(chars[start])) {\n      end--;\n    } else {\n      start++;\n    }\n  }\n\n  return chars.join('');\n}\n\nconsole.log(reverseVowels('padhAI')); // pIdhAa\nconsole.log(reverseVowels('padhakoo')); // podhokaa\nconsole.log(reverseVowels('OpenAI')); // IpAneO"
+                    "answer": "function reverseVowels(str) {\n\n    const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];\n    const chars = str.split('');\n    let start = 0;\n    let end = chars.length - 1;\n  \n    while (start < end) {\n      if (vowels.includes(chars[start]) && vowels.includes(chars[end])) {\n        [chars[start], chars[end]] = [chars[end], chars[start]];\n        start++;\n        end--;\n      }\n      \n      else if (vowels.includes(chars[start])) {\n        end--;\n      }\n      \n      else {\n        start++;\n      }\n    }\n  \n    return chars.join('');\n  }\n  \n  console.log(reverseVowels('padhAI')); // pIdhAa\n  console.log(reverseVowels('padhakoo')); // podhokaa\n  console.log(reverseVowels('OpenAI')); // IpAneO"
                 },
                 {
                     "id": 15,

@@ -4518,7 +4518,7 @@
                     "output2": "'snow'",
 
                     "detailedQuestion": "",
-                    "answer": "function longStr(arr) {\n  let result = '';\n  for (i = 0; i < arr.length; i++) {\n    if (arr[i].length > result.length) {\n      result = arr[i];\n    }\n  }\n  return console.log(result);\n}\n\nlongStr(['bit', 'coin']); // coin\nlongStr(['jon', 'snow']); // snow"
+                    "answer": "function longestStr(arr) {\n  let result = '';\n  for (i = 0; i < arr.length; i++) {\n    if (arr[i].length > result.length) {\n      result = arr[i];\n    }\n  }\n  return console.log(result);\n}\n\nlongestStr(['bit', 'coin']); // coin\nlongestStr(['jon', 'snow']); // snow"
                 },
                 {
                     "id": 3,
@@ -4542,7 +4542,7 @@
 
                     "input2": "s = 'Ask padhAI' ",
                     "output2": "6",
-                    "answer": "function lengthOfLast(s) {\n\n  // Remove leading & trailing spaces\n  let trimStr = s.trim();\n\n  // Split string into an array\n  let arr = trimStr.split(' ');\n  // Get the last word\n  let result = arr[arr.length - 1];\n\n  return console.log(result.length);\n}\n\nlengthOfLast('Hey JavaScript  '); // 10\nlengthOfLast('Ask padhAI'); // 6"
+                    "answer": "function lengthOfLastWord(s) {\n\n  // Remove leading & trailing spaces\n  let trimmedStr = s.trim();\n\n  // Split string into an array\n  let arr = trimmedStr.split(' ');\n  // Get the last word\n  let result = arr[arr.length - 1];\n\n  return console.log(result.length);\n}\n\nlengthOfLastWord('Hey JavaScript  '); // 10\nlengthOfLastWord('Ask padhAI'); // 6"
                 },
                 {
                     "id": 5,
@@ -4556,7 +4556,7 @@
                     "output2": "'hsa'",
 
                     "detailedQuestion": "",
-                    "answer": "function revStr(str) {\n  let stack = [];\n  let result = '';\n\n  // turn string into stack\n  for (i = 0; i < str.length; i++) {\n    stack[i] = str[i];\n  }\n\n  let length = stack.length;\n\n  for (i = length - 1; i >= 0; i--) {\n    // add every i'th element to result\n    result = result + stack[i];\n\n    // pop last element\n    length = i;\n  }\n\n  return console.log(result);\n}\n\nrevStr('pikachu'); // uhcakip\nrevStr('ash'); // hsa"
+                    "answer": "function stackReverse(str) {\n  let stack = [];\n  let result = '';\n\n  // turn string into stack\n  for (i = 0; i < str.length; i++) {\n    stack[i] = str[i];\n  }\n\n  let length = stack.length;\n\n  for (i = length - 1; i >= 0; i--) {\n    // add every i'th element to result\n    result = result + stack[i];\n\n    // pop last element\n    length = i;\n  }\n\n  return console.log(result);\n}\n\nstackReverse('pikachu'); // uhcakip\nstackReverse('ash'); // hsa"
                 },
                 {
                     "id": 6,
@@ -4570,7 +4570,7 @@
                     "output2": "[ 2, 6, 9, 22 ]",
 
                     "detailedQuestion": "",
-                    "answer": "function rmvDupes(arr1, arr2) \n  let merge = [...arr1, ...arr2];\n  merge.sort((a, b) => a - b);\n\n  let result = [];\n  for (i = 0; i < merge.length; i++) \n    if (merge[i] !== merge[i + 1]) \n      result.push(merge[i]);\n  return console.log(result);\n\nrmvDupes([3, 1, 4], [2, 7, 3]);\nrmvDupes([9, 22, 2], [22, 6, 9]);"
+                    "answer": "function removeDuplicates(arr1, arr2) {\n\n    // merging two arrays using destructuring\n    let merge = [...arr1, ...arr2];\n    // sorting the merged array in ascending order\n    merge.sort((a, b) => a - b);\n\n    let result = [];\n    for (i = 0; i < merge.length; i++) {\n        if (merge[i] !== merge[i + 1]) {\n            result.push(merge[i]);\n        }\n    }\n\n    return console.log(result);\n}\n\nremoveDuplicates([3, 1, 4], [2, 7, 3]); // [ 1, 2, 3, 4, 7 ]\nremoveDuplicates([9, 22, 2], [22, 6, 9]); // [ 2, 6, 9, 22 ]\n"
                 },
                 {
                     "id": 7,
@@ -4584,7 +4584,8 @@
                     "output2": "136",
 
                     "detailedQuestion": "",
-                    "answer": "function theLcm(n1, n2) \n  for (i = 1; i <= n2; i++) \n    let result = n1 * i;\n    if (result % n2 == 0) \n      return console.log(result);\n\ntheLcm(3, 4); // 12\ntheLcm(17, 8) // 136;"
+                    "answer": "function theLcm(n1, n2) {\n    \n    for (i = 1; i <= n2; i++) {\n        let result = n1 * i;\n        if (result % n2 == 0) {\n            return result;\n        }\n    }\n}\n\nconsole.log(theLcm(3, 4)); // 12\nconsole.log(theLcm(17, 8)); // 136;"
+
                 },
                 {
                     "id": 8,

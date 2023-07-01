@@ -3,7 +3,7 @@
         {
             "id": 1,
             "title": "JavaScript",
-            "logo": "javascript.png",
+            "logo": "javascript.webp",
             "description": "JavaScript is a versatile language for building interactive web applications. It runs in the browser and enables real-time updates and user interactivity.",
             "lastUpdated": "3rd June 2023",
             "body": [
@@ -312,7 +312,7 @@
         {
             "id": 2,
             "title": "React JS",
-            "logo": "react.png",
+            "logo": "react.webp",
             "description": "React is a JavaScript library for building user interfaces. It's widely used in web development, particularly for creating reusable components and optimizing rendering performance. Companies like Facebook, Instagram, Airbnb, and Netflix rely on React for their applications.",
             "lastUpdated": "1st June 2023",
             "body": [
@@ -623,7 +623,7 @@
         {
             "id": 3,
             "title": "Python - I",
-            "logo": "python.png",
+            "logo": "python.webp",
             "description": "Python is a popular and versatile programming language known for its simplicity and readability. It's widely used in web development, data analysis, AI, and automation. Python is favored for its clean syntax and extensive library ecosystem. It's employed by companies like Google, Dropbox, Instagram, and NASA",
             "lastUpdated": "5th June 2023",
             "body": [
@@ -933,7 +933,7 @@
         {
             "id": 4,
             "title": "Python - II",
-            "logo": "python.png",
+            "logo": "python.webp",
             "description": "Python is a popular and versatile programming language known for its simplicity and readability. It's widely used in web development, data analysis, AI, and automation. Python is favored for its clean syntax and extensive library ecosystem. It's employed by companies like Google, Dropbox, Instagram, and NASA",
             "lastUpdated": "6th June 2023",
             "body": [
@@ -1242,7 +1242,7 @@
         {
             "id": 5,
             "title": "CSS - I",
-            "logo": "css.png",
+            "logo": "css.webp",
             "description": "CSS is a vital technology for web styling. It controls the appearance and layout of HTML elements. Widely used in web development, CSS enables visually appealing designs and responsive layouts, with options for colors, fonts, spacing, and animations.",
             "lastUpdated": "6th June 2023",
             "body": [
@@ -1551,7 +1551,7 @@
         {
             "id": 6,
             "title": "CSS - II",
-            "logo": "css.png",
+            "logo": "css.webp",
             "description": "CSS is a vital technology for web styling. It controls the appearance and layout of HTML elements. Widely used in web development, CSS enables visually appealing designs and responsive layouts, with options for colors, fonts, spacing, and animations.",
             "lastUpdated": "7th June 2023",
             "body": [
@@ -1860,7 +1860,7 @@
         {
             "id": 7,
             "title": "HTML",
-            "logo": "html.png",
+            "logo": "html.webp",
             "description": "HTML is the standard markup language for creating web pages. It structures content and enables interactive and accessible websites across devices and browsers.",
             "lastUpdated": "29th May 2023",
             "body": [
@@ -2169,7 +2169,7 @@
         {
             "id": 8,
             "title": "SQL - I",
-            "logo": "sql.png",
+            "logo": "sql.webp",
             "description": "SQL is a programming language for managing relational databases. It handles data storage, retrieval, and manipulation efficiently.",
             "lastUpdated": "4th June 2023",
             "body": [
@@ -2478,7 +2478,7 @@
         {
             "id": 9,
             "title": "SQL - II",
-            "logo": "sql.png",
+            "logo": "sql.webp",
             "description": "SQL is a programming language for managing relational databases. It handles data storage, retrieval, and manipulation efficiently.",
             "lastUpdated": "7th June 2023",
             "body": [
@@ -2787,7 +2787,7 @@
         {
             "id": 10,
             "title": "Redux",
-            "logo": "redux.png",
+            "logo": "redux.webp",
             "description": "Redux is a predictable state container for JavaScript applications, commonly used with React. It simplifies state management and enables scalable applications with a unidirectional data flow.",
             "lastUpdated": "6th June 2023",
             "body": [
@@ -3096,7 +3096,7 @@
         {
             "id": 11,
             "title": "Node JS",
-            "logo": "nodejs.png",
+            "logo": "nodejs.webp",
             "description": "Node.js is a JavaScript runtime for server-side applications. It enables scalable and efficient web development with a vast ecosystem of packages.",
             "lastUpdated": "7th June 2023",
             "body": [
@@ -3425,7 +3425,7 @@
         {
             "id": 12,
             "title": "Express JS",
-            "logo": "expressjs.png",
+            "logo": "expressjs.webp",
             "description": "Express.js is a minimalist web application framework for Node.js. It simplifies building web servers and APIs with its flexibility and extensive middleware support.",
             "lastUpdated": "7th June 2023",
             "body": [
@@ -3734,7 +3734,7 @@
         {
             "id": 13,
             "title": "Java - I",
-            "logo": "java.png",
+            "logo": "java.webp",
             "description": "Java is a versatile programming language used for developing a wide range of applications. It offers strong support for object-oriented programming and is known for its robustness and scalability. Java is widely employed by companies across industries.",
             "lastUpdated": "7th June 2023",
             "body": [
@@ -4043,7 +4043,7 @@
         {
             "id": 14,
             "title": "Java - II",
-            "logo": "java.png",
+            "logo": "java.webp",
             "description": "Java is a versatile programming language used for developing a wide range of applications. It offers strong support for object-oriented programming and is known for its robustness and scalability. Java is widely employed by companies across industries.",
             "lastUpdated": "8th June 2023",
             "body": [
@@ -4679,7 +4679,7 @@
         {
             "id": 1,
             "title": "JavaScript",
-            "logo": "javascript.png",
+            "logo": "javascript.webp",
             "description": "JavaScript is a versatile language for building interactive web applications. It runs in the browser and enables real-time updates and user interactivity.",
             "lastUpdated": "5th June 2023",
             "body": [
@@ -4788,7 +4788,7 @@
         {
             "id": 2,
             "title": "React JS",
-            "logo": "react.png",
+            "logo": "react.webp",
             "description": "React is a JavaScript library for building user interfaces. It's widely used in web development, particularly for creating reusable components and optimizing rendering performance. Companies like Facebook, Instagram, Airbnb, and Netflix rely on React for their applications.",
             "lastUpdated": "7th June 2023",
             "body": [
@@ -4897,7 +4897,7 @@
         {
             "id": 3,
             "title": "Python",
-            "logo": "python.png",
+            "logo": "python.webp",
             "description": "Python is a popular and versatile programming language known for its simplicity and readability. It's widely used in web development, data analysis, AI, and automation. Python is favored for its clean syntax and extensive library ecosystem. It's employed by companies like Google, Dropbox, Instagram, and NASA",
             "lastUpdated": "11th June 2023",
             "body": [
@@ -5006,7 +5006,7 @@
         {
             "id": 4,
             "title": "SQL",
-            "logo": "sql.png",
+            "logo": "sql.webp",
             "description": "SQL is a programming language for managing relational databases. It handles data storage, retrieval, and manipulation efficiently.",
             "lastUpdated": "12th June 2023",
             "body": [
@@ -5115,7 +5115,7 @@
         {
             "id": 5,
             "title": "Java",
-            "logo": "java.png",
+            "logo": "java.webp",
             "description": "Java is a versatile programming language used for developing a wide range of applications. It offers strong support for object-oriented programming and is known for its robustness and scalability. Java is widely employed by companies across industries.",
             "lastUpdated": "12th June 2023",
             "body": [
@@ -5224,7 +5224,7 @@
         {
             "id": 6,
             "title": "CSS",
-            "logo": "css.png",
+            "logo": "css.webp",
             "description": "CSS is a vital technology for web styling. It controls the appearance and layout of HTML elements. Widely used in web development, CSS enables visually appealing designs and responsive layouts, with options for colors, fonts, spacing, and animations.",
             "lastUpdated": "13th June 2023",
             "body": [
@@ -5333,7 +5333,7 @@
         {
             "id": 7,
             "title": "HTML",
-            "logo": "html.png",
+            "logo": "html.webp",
             "description": "HTML is the standard markup language for creating web pages. It structures content and enables interactive and accessible websites across devices and browsers.",
             "lastUpdated": "14th June 2023",
             "body": [
@@ -5442,7 +5442,7 @@
         {
             "id": 8,
             "title": "Django",
-            "logo": "django.png",
+            "logo": "django.webp",
             "description": "Django is a powerful Python web framework known for its rapid development capabilities and comprehensive features. It emphasizes code reusability and scalability, making it popular among developers.",
             "lastUpdated": "15th June 2023",
             "body": [
@@ -5551,7 +5551,7 @@
         {
             "id": 9,
             "title": "MongoDB",
-            "logo": "mongodb.png",
+            "logo": "mongodb.webp",
             "description": "MongoDB is a scalable NoSQL database known for its flexibility and document-oriented approach. It's widely used in modern web applications for its performance and ease of use.",
             "lastUpdated": "15th June 2023",
             "body": [
@@ -5660,7 +5660,7 @@
         {
             "id": 10,
             "title": "Node JS",
-            "logo": "nodejs.png",
+            "logo": "nodejs.webp",
             "description": "Node.js is a JavaScript runtime for server-side applications. It enables scalable and efficient web development with a vast ecosystem of packages.",
             "lastUpdated": "15th June 2023",
             "body": [

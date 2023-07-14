@@ -1,7 +1,7 @@
 {
     "mcqs": [
         {
-            "id": 1,
+            "id": "javascript",
             "title": "JavaScript",
             "logo": "javascript.webp",
             "description": "JavaScript is a versatile language for building interactive web applications. It runs in the browser and enables real-time updates and user interactivity.",
@@ -310,7 +310,7 @@
             ]
         },
         {
-            "id": 2,
+            "id": "react-js",
             "title": "React JS",
             "logo": "react.webp",
             "description": "React is a JavaScript library for building user interfaces. It's widely used in web development, particularly for creating reusable components and optimizing rendering performance. Companies like Facebook, Instagram, Airbnb, and Netflix rely on React for their applications.",
@@ -621,7 +621,7 @@
             ]
         },
         {
-            "id": 3,
+            "id": "python-I",
             "title": "Python - I",
             "logo": "python.webp",
             "description": "Python is a popular and versatile programming language known for its simplicity and readability. It's widely used in web development, data analysis, AI, and automation. Python is favored for its clean syntax and extensive library ecosystem. It's employed by companies like Google, Dropbox, Instagram, and NASA",
@@ -931,7 +931,7 @@
             ]
         },
         {
-            "id": 4,
+            "id": "python-II",
             "title": "Python - II",
             "logo": "python.webp",
             "description": "Python is a popular and versatile programming language known for its simplicity and readability. It's widely used in web development, data analysis, AI, and automation. Python is favored for its clean syntax and extensive library ecosystem. It's employed by companies like Google, Dropbox, Instagram, and NASA",
@@ -1240,7 +1240,7 @@
             ]
         },
         {
-            "id": 5,
+            "id": "css-I",
             "title": "CSS - I",
             "logo": "css.webp",
             "description": "CSS is a vital technology for web styling. It controls the appearance and layout of HTML elements. Widely used in web development, CSS enables visually appealing designs and responsive layouts, with options for colors, fonts, spacing, and animations.",
@@ -1549,7 +1549,7 @@
             ]
         },
         {
-            "id": 6,
+            "id": "css-II",
             "title": "CSS - II",
             "logo": "css.webp",
             "description": "CSS is a vital technology for web styling. It controls the appearance and layout of HTML elements. Widely used in web development, CSS enables visually appealing designs and responsive layouts, with options for colors, fonts, spacing, and animations.",
@@ -1858,7 +1858,7 @@
             ]
         },
         {
-            "id": 7,
+            "id": "html",
             "title": "HTML",
             "logo": "html.webp",
             "description": "HTML is the standard markup language for creating web pages. It structures content and enables interactive and accessible websites across devices and browsers.",
@@ -2167,7 +2167,7 @@
             ]
         },
         {
-            "id": 8,
+            "id": "sql-I",
             "title": "SQL - I",
             "logo": "sql.webp",
             "description": "SQL is a programming language for managing relational databases. It handles data storage, retrieval, and manipulation efficiently.",
@@ -2476,7 +2476,7 @@
             ]
         },
         {
-            "id": 9,
+            "id": "sql-II",
             "title": "SQL - II",
             "logo": "sql.webp",
             "description": "SQL is a programming language for managing relational databases. It handles data storage, retrieval, and manipulation efficiently.",
@@ -2785,7 +2785,7 @@
             ]
         },
         {
-            "id": 10,
+            "id": "redux",
             "title": "Redux",
             "logo": "redux.webp",
             "description": "Redux is a predictable state container for JavaScript applications, commonly used with React. It simplifies state management and enables scalable applications with a unidirectional data flow.",
@@ -3094,7 +3094,7 @@
             ]
         },
         {
-            "id": 11,
+            "id": "node-js",
             "title": "Node JS",
             "logo": "nodejs.webp",
             "description": "Node.js is a JavaScript runtime for server-side applications. It enables scalable and efficient web development with a vast ecosystem of packages.",
@@ -3423,7 +3423,7 @@
             ]
         },
         {
-            "id": 12,
+            "id": "express-js",
             "title": "Express JS",
             "logo": "expressjs.webp",
             "description": "Express.js is a minimalist web application framework for Node.js. It simplifies building web servers and APIs with its flexibility and extensive middleware support.",
@@ -3732,7 +3732,7 @@
             ]
         },
         {
-            "id": 13,
+            "id": "java-I",
             "title": "Java - I",
             "logo": "java.webp",
             "description": "Java is a versatile programming language used for developing a wide range of applications. It offers strong support for object-oriented programming and is known for its robustness and scalability. Java is widely employed by companies across industries.",
@@ -4041,7 +4041,7 @@
             ]
         },
         {
-            "id": 14,
+            "id": "java-II",
             "title": "Java - II",
             "logo": "java.webp",
             "description": "Java is a versatile programming language used for developing a wide range of applications. It offers strong support for object-oriented programming and is known for its robustness and scalability. Java is widely employed by companies across industries.",
@@ -4353,7 +4353,7 @@
     ],
     "dsa": [
         {
-            "id": 1,
+            "id": "easy",
             "title": "Easy",
             "logo": "easy.webp",
             "lastUpdated": "15th June 2023",
@@ -4460,7 +4460,7 @@
             ]
         },
         {
-            "id": 2,
+            "id": "medium",
             "title": "Medium",
             "logo": "medium.webp",
             "lastUpdated": "19th June 2023",
@@ -4677,7 +4677,7 @@
     ],
     "interview": [
         {
-            "id": 1,
+            "id": "javascript",
             "title": "JavaScript",
             "logo": "javascript.webp",
             "description": "JavaScript is a versatile language for building interactive web applications. It runs in the browser and enables real-time updates and user interactivity.",
@@ -4786,7 +4786,7 @@
             ]
         },
         {
-            "id": 2,
+            "id": "react-js",
             "title": "React JS",
             "logo": "react.webp",
             "description": "React is a JavaScript library for building user interfaces. It's widely used in web development, particularly for creating reusable components and optimizing rendering performance. Companies like Facebook, Instagram, Airbnb, and Netflix rely on React for their applications.",
@@ -4895,7 +4895,7 @@
             ]
         },
         {
-            "id": 3,
+            "id": "python",
             "title": "Python",
             "logo": "python.webp",
             "description": "Python is a popular and versatile programming language known for its simplicity and readability. It's widely used in web development, data analysis, AI, and automation. Python is favored for its clean syntax and extensive library ecosystem. It's employed by companies like Google, Dropbox, Instagram, and NASA",
@@ -5004,7 +5004,7 @@
             ]
         },
         {
-            "id": 4,
+            "id": "sql",
             "title": "SQL",
             "logo": "sql.webp",
             "description": "SQL is a programming language for managing relational databases. It handles data storage, retrieval, and manipulation efficiently.",
@@ -5113,7 +5113,7 @@
             ]
         },
         {
-            "id": 5,
+            "id": "java",
             "title": "Java",
             "logo": "java.webp",
             "description": "Java is a versatile programming language used for developing a wide range of applications. It offers strong support for object-oriented programming and is known for its robustness and scalability. Java is widely employed by companies across industries.",
@@ -5222,7 +5222,7 @@
             ]
         },
         {
-            "id": 6,
+            "id": "css",
             "title": "CSS",
             "logo": "css.webp",
             "description": "CSS is a vital technology for web styling. It controls the appearance and layout of HTML elements. Widely used in web development, CSS enables visually appealing designs and responsive layouts, with options for colors, fonts, spacing, and animations.",
@@ -5331,7 +5331,7 @@
             ]
         },
         {
-            "id": 7,
+            "id": "html",
             "title": "HTML",
             "logo": "html.webp",
             "description": "HTML is the standard markup language for creating web pages. It structures content and enables interactive and accessible websites across devices and browsers.",
@@ -5440,7 +5440,7 @@
             ]
         },
         {
-            "id": 8,
+            "id": "django",
             "title": "Django",
             "logo": "django.webp",
             "description": "Django is a powerful Python web framework known for its rapid development capabilities and comprehensive features. It emphasizes code reusability and scalability, making it popular among developers.",
@@ -5549,7 +5549,7 @@
             ]
         },
         {
-            "id": 9,
+            "id": "mongodb",
             "title": "MongoDB",
             "logo": "mongodb.webp",
             "description": "MongoDB is a scalable NoSQL database known for its flexibility and document-oriented approach. It's widely used in modern web applications for its performance and ease of use.",
@@ -5658,7 +5658,7 @@
             ]
         },
         {
-            "id": 10,
+            "id": "node-js",
             "title": "Node JS",
             "logo": "nodejs.webp",
             "description": "Node.js is a JavaScript runtime for server-side applications. It enables scalable and efficient web development with a vast ecosystem of packages.",
